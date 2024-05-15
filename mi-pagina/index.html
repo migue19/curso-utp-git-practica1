@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primer Pagina Web</title>
+    <title>Mi Primer Página Web</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            padding: 50px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    
+
+    <header>
+        <h1>Bienvenidos a Chez Vous Time Café</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="concepto.html">Concepto</a>
+            <a href="#">Menú</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Un nuevo concepto de cafetería</h2>
+            <p>Descubre una experiencia única donde el tiempo es tuyo.</p>
+            <a href="concepto.html" class="cta-button">Conoce nuestro concepto</a>
+        </section>
+    </main>
+
 </body>
 </html>
