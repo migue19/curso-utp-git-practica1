@@ -3,60 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primer Página Web</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            margin: 0;
-            text-align: center;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-
-        main {
-            padding: 50px 0;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: #007bff;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
-        }
-    </style>
+    <title>Chez Vous Time Café</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="my-style.css">
+    <script src="acciones.js"></script>
 </head>
-<body>
+<body class="bg-gray-100">
 
-    <header>
-        <h1>Bienvenidos a Chez Vous Time Café</h1>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="concepto.html">Concepto</a>
-            <a href="#">Menú</a>
-            <a href="#">Contacto</a>
-        </nav>
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <h1 class="text-2xl font-bold text-blue-500">Chez Vous Time Café</h1>
+            <nav>
+                <a href="index.html" class="text-gray-800 hover:text-blue-500 mx-2">Inicio</a>
+                <a href="#" onclick="cargarConcepto()" class="text-gray-800 hover:text-blue-500 mx-2">Concepto</a>
+                <a href="contacto.html" class="text-gray-800 hover:text-blue-500 mx-2">Contacto</a>
+                <a href="reservas.html" class="text-gray-800 hover:text-blue-500 mx-2">Reservas</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section>
-            <h2>Un nuevo concepto de cafetería</h2>
-            <p>Descubre una experiencia única donde el tiempo es tuyo.</p>
-            <a href="concepto.html" class="cta-button">Conoce nuestro concepto</a>
-        </section>
+    <main class="py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="col-span-1">
+                <section class="bg-white rounded-lg shadow-md p-6">
+                    <img src="images/Skibidi_Comun.webp" alt="Logo Chez Vous" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+                    <h2 class="text-xl font-bold text-center">Chez Vous Time Café</h2>
+                    <p class="text-center">Tu espacio de trabajo y creatividad.</p>
+                </section>
+            </div>
+
+            <div class="col-span-2">
+                <section class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-xl font-bold mb-4">Novedades</h2>
+                    <div class="post mb-4">
+                        <P>EN CAMINO...</P>
+                    </div>
+                    
+                </section>
+
+                <section class="bg-white rounded-lg shadow-md p-6 mt-8">
+                    <h2 class="text-xl font-bold mb-4">Sobre nosotros</h2>
+                    <p>Somos el primer Time Café de México, un lugar donde puedes trabajar, estudiar, relajarte y disfrutar de deliciosas bebidas y snacks, pagando solo por el tiempo que permaneces.</p>
+                </section>
+            </div>
+
+            <div id="concepto-content" class="col-span-2 mt-8"></div> </div>
     </main>
 
+    
 </body>
 </html>

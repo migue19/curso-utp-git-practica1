@@ -3,57 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="my-style.css">
     <title>Reservas</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1 class="titulo">RESERVAS</h1>
-    <div class="container">
-        <div class="address">
-            <img src="images/sala1.jpeg" alt="#">
-            <p>Calle Cerro Azul Col Chapultepec, 41, Puebla.Pue</p>
-            <button>Seleccionar</button>
-          </div>
-          <div class="address">
-            <img src="images/sala2.jpeg" alt="#">
-            <p>primera privada abedul 105 Col Amalucan, Puebla.Pue</p>
-            <button>Seleccionar</button>
-          </div>
+<header class="bg-white shadow-md py-4">
+    <div class="container mx-auto px-4 flex items-center justify-between">
+        <h1 class="text-2xl font-bold text-blue-500">Chez Vous Time Café</h1>
+        <nav>
+            <a href="index.html" class="text-gray-800 hover:text-blue-500 mx-2">Inicio</a>
+            <a href="concepto.html" class="text-gray-800 hover:text-blue-500 mx-2">Concepto</a>
+            <a href="contacto.html" class="text-gray-800 hover:text-blue-500 mx-2">Contacto</a>
+            <a href="reservas.html" class="text-gray-800 hover:text-blue-500 mx-2">Reservas</a>
+        </nav>
     </div>
-    <br>
-    <br>
-    <div class="container">
-        <div class="address">
-            <img src="images/sala3.jpeg" alt="#">
-            <p>San Miguel 35 Col Clavijero Puebla,Pue</p>
-            <button>Seleccionar</button>
-          </div>
-          <div class="address">
-            <img src="images/sala4.jpeg" alt="#">
-            <p>Calle amplacion Historiadores, Col El Salvador</p>
-            <button>Seleccionar</button>
-          </div>
-    </div>
-<footer>
-    <div class="div-footer">
-        <h2>RESERVA DE SALAS</h2>
-    <p class="reseva"> Descubre una nueva forma de trabajar en la bulliciosa Ciudad de Puebla con Reservaciones Skibid. ¿Necesitas un espacio para reuniones o  simplemente un lugar tranquilo para concentrarte? En Reservaciones Skibidi, ofrecemos la flexibilidad que necesitas con salas de juntas y espacios de trabajo disponibles por horas o días enteros en cinco ubicaciones convenientes en Puebla, incluyendo Amalucan, AV.Juárez, Xonacatepec y La Cocota.
+</header>
 
-        Ya sea que estés planeando una importante reunión de negocios, una presentación o simplemente una sesión de trabajo colaborativa, tenemos el espacio adecuado para ti. Desde amplias salas de juntas para reuniones formales hasta acogedoras áreas de trabajo para discusiones más íntimas, y salas de televisión para actividades creativas, nuestra variedad de opciones de reservas te brinda la libertad de elegir lo que mejor se adapte a tus necesidades.
-        <br>
-        <br>
-        ¿Buscas un lugar para celebrar un evento empresarial en Puebla? ¡También tenemos opciones para ti! Puedes reservar todo el local y disfrutar de un ambiente exclusivo para tu evento.
-        <br>
-        <br>
-        Además de nuestras opciones de reservas habituales, ofrecemos la oportunidad de asegurar tu propio escritorio o espacio de trabajo personal en nuestros acogedores cafés coworking. Disfruta de la mejor conexión wifi, café de especialidad y una selección de snacks mientras trabajas en un entorno inspirador y productivo.
-        <br>
-        <br>
-        Descubre una nueva forma de trabajar con Reservaciones Skibidi. ¡Te esperamos para brindarte la mejor experiencia de trabajo en la ciudad!</p>
-        <br>
-        <br>
-    <p class="copy">© Derechos reservados SA de CV a Miguel Mexicano y todos sus colaboradores</p>
+<body class="bg-gray-100 font-sans">
+
+    <h1 class="text-3xl font-bold text-center my-8">RESERVAS</h1>
+
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="address bg-white rounded-lg shadow-md p-6">
+                <img src="images/sala1.jpeg" alt="Sala 1" class="w-full h-48 object-cover rounded-md mb-4">
+                <p>Calle Cerro Azul Col Chapultepec, 41, Puebla.Pue</p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Seleccionar</button>
+            </div>
+            <div class="address bg-white rounded-lg shadow-md p-6">
+                <img src="images/sala2.jpeg" alt="Sala 2" class="w-full h-48 object-cover rounded-md mb-4">
+                <p>primera privada abedul 105 Col Amalucan, Puebla.Pue</p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Seleccionar</button>
+            </div>
+            <div class="address bg-white rounded-lg shadow-md p-6">
+                <img src="images/sala3.jpeg" alt="Sala 3" class="w-full h-48 object-cover rounded-md mb-4">
+                <p>San Miguel 35 Col Clavijero Puebla,Pue</p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Seleccionar</button>
+            </div>
+            <div class="address bg-white rounded-lg shadow-md p-6">
+                <img src="images/sala4.jpeg" alt="Sala 4" class="w-full h-48 object-cover rounded-md mb-4">
+                <p>Calle amplacion Historiadores, Col El Salvador</p>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Seleccionar</button>
+            </div>
+        </div>
     </div>
-    
-</footer>
+
+    <footer class="bg-gray-800 text-white py-8 mt-8">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4">RESERVA DE SALAS</h2>
+            <p class="reseva text-justify">
+                Descubre una nueva forma de trabajar en la bulliciosa Ciudad de Puebla con Reservaciones Skibidi
+            </p>
+            <p class="copy text-sm mt-8">© Derechos reservados SA de CV a Miguel Mexicano y todos sus colaboradores</p>
+        </div>
+    </footer>
+
 </body>
 </html>

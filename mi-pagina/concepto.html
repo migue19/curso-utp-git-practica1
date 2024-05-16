@@ -4,35 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concepto - Chez Vous Time Café</title>
-    <link rel="stylesheet" href="my-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="container">
-        <h2>Descubre el Concepto Chez Vous</h2>
-        <p>Más que un café, un espacio para crear, conectar y disfrutar.</p>
+<body class="bg-gray-100 font-sans">
 
-        <div class="concept-highlights">
-            <div class="highlight">
-                <img src="imhg/pagar-a-tiempo.jpg" alt="Paga por tiempo">
-                <h3>Paga por Tiempo</h3>
+  
+
+    <div class="container mx-auto px-4 py-8">
+        <h2 class="text-3xl font-bold text-center mb-6">Descubre el Concepto Chez Vous</h2>
+        <p class="text-lg text-center mb-8">Más que un café, un espacio para crear, conectar y disfrutar.</p>
+
+        <div class="concept-highlights grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="highlight bg-white rounded-lg shadow-md p-6">
+                <img src="images/pagar-a-tiempo.jpg" alt="Paga por tiempo" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-bold mb-2">Paga por Tiempo</h3>
                 <p>Disfruta de todo lo que ofrecemos pagando solo por el tiempo que estés.</p>
             </div>
-            <div class="highlight">
-                <img src="imhg/talleres.jpg" alt="Ambiente acogedor">
-                <h3>Ambiente Acogedor</h3>
+            <div class="highlight bg-white rounded-lg shadow-md p-6">
+                <img src="images/talleres.jpg" alt="Ambiente acogedor" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-bold mb-2">Ambiente Acogedor</h3>
                 <p>Relájate en un espacio diseñado para inspirar y fomentar la creatividad.</p>
             </div>
-            <div class="highlight">
-                <img src="imhg/creativa.jpg" alt="Comunidad creativa">
-                <h3>Comunidad Creativa</h3>
+            <div class="highlight bg-white rounded-lg shadow-md p-6">
+                <img src="images/creativa.jpg" alt="Comunidad creativa" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-bold mb-2">Comunidad Creativa</h3>
                 <p>Conecta con otros profesionales y apasionados en un ambiente colaborativo.</p>
             </div>
-            <div class="highlight">
-                <img src="imhg/trabajo.jpg" alt="Eventos y talleres">
-                <h3>Eventos y Talleres</h3>
+            <div class="highlight bg-white rounded-lg shadow-md p-6">
+                <img src="images/trabajo.jpg" alt="Eventos y talleres" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-bold mb-2">Eventos y Talleres</h3>
                 <p>Participa en charlas, talleres y eventos que enriquecen tu experiencia.</p>
             </div>
         </div>
     </div>
+
 </body>
 </html>
