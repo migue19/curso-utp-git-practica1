@@ -1,3 +1,56 @@
+.address {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    
+  }
+  .address img {
+    width: 200px; 
+    height: 100px; 
+    margin: 50px;
+  }
+  
+  div div.address {
+    flex: 1;
+    border: 1px solid black; 
+    margin: 0 15px; 
+    max-width: 300px; 
+  }
+  
+  .address p {
+    margin-bottom: 10px;
+  }
+
+  .container {
+    display: flex; 
+    justify-content: center; 
+
+  }
+  h1{
+    text-align: center;
+
+  }
+  h2{
+    text-align: center;
+    color: white;
+  }
+  .reseva{
+    text-align: justify;
+    color: white;
+  }
+  .copy{
+    color: rgb(169, 201, 41);
+    text-decoration:dashed;
+    text-decoration: overline;
+  }
+  
+  .div-footer{
+    background-color: rgb(63, 63, 63);
+  }
+  p{
+    color: #333;
+  }
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
