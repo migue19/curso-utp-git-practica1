@@ -3,31 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-    <link rel="stylesheet" href="my-style.css">
+    <title>Mi Primer Página Web</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        main {
+            padding: 50px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Contacto</h1>
-    <form action="enviar.php" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <br>
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
-        <br>
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-        <br>
-        <button type="submit">Enviar</button>
 
-        
+    <header>
+        <h1>Bienvenidos a Chez Vous Time Café</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="concepto.html">Concepto</a>
+            <a href="#">Menú</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
 
-    </form>
-    <h4>Nos interesa saber mas de ti completa este formulario</h4>
-    <h5>¡Te leeremos!</h5>
-    <h3>Para mas informacion contacta al</h3>
+    <main>
+        <section>
+            <h2>Un nuevo concepto de cafetería</h2>
+            <p>Descubre una experiencia única donde el tiempo es tuyo.</p>
+            <a href="concepto.html" class="cta-button">Conoce nuestro concepto</a>
+        </section>
+    </main>
 
-        <p>emirzepeds@gmail.com</p>
-        <p>22212233322</p>
 </body>
 </html>
